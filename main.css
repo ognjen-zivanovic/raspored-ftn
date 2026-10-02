@@ -1,0 +1,92 @@
+html,
+body {
+    overflow: hidden;
+}
+
+/* Sidebar Layout */
+.modern-sidebar {
+    padding: 24px;
+    background-color: #f8fafc;
+    /* Soft off-white */
+    border-right: 1px solid #e2e8f0;
+    font-family: system-ui, -apple-system, sans-serif;
+    width: 400px;
+    min-height: 100vh;
+    max-height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    overflow-y: auto;
+    /* Adds a vertical scrollbar only when needed */
+    /* Space between dropdown and checkboxes */
+}
+
+/* Dropdown Styling */
+.modern-dropdown {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    background-color: white;
+    font-size: 14px;
+    color: #334155;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.modern-dropdown:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+/* Checkbox Container */
+.group-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* Space between each checkbox */
+    padding-top: 8px;
+    border-top: 1px solid #e2e8f0;
+    /* Visual separator */
+}
+
+/* Individual Checkbox Row */
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Modern Checkbox */
+.checkbox-wrapper input[type="checkbox"] {
+    min-width: 18px;
+    min-height: 18px;
+    cursor: pointer;
+    accent-color: #3b82f6;
+    margin: 0;
+}
+
+.checkbox-wrapper label {
+    font-size: 14px;
+    color: #475569;
+    cursor: pointer;
+    user-select: none;
+    font-weight: 500;
+}
+
+.checkbox-wrapper:hover label {
+    color: #0f172a;
+}
+
+.color-pickers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 12px;
+    padding-top: 8px;
+    border-top: 1px solid #e2e8f0;
+}
