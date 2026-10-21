@@ -22,6 +22,14 @@ body {
     /* Space between dropdown and checkboxes */
 }
 
+@media only screen and (max-width: 732px) {
+    .modern-sidebar {
+        width: 90%;
+        max-height: none;
+        margin: auto;
+    }
+}
+
 /* Dropdown Styling */
 .modern-dropdown {
     width: 100%;
@@ -89,4 +97,12 @@ body {
     gap: 12px;
     padding-top: 8px;
     border-top: 1px solid #e2e8f0;
+}
+
+@media only screen and (max-width: 732px) {
+
+    html,
+    body {
+        overflow: auto;
+    }
 }

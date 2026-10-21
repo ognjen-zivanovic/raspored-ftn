@@ -1,7 +1,7 @@
 import { data } from './data.js';
 import { days, COLORS } from './constants.js';
 
-const targetGroups = [];
+let targetGroups = [];
 let targetStudyProgram = "ОАС | 3. Семестар | Софтверско инжењерство и информационе технологије";
 
 document.getElementById("brojgrupe").innerHTML = "О. Ж."
@@ -311,3 +311,17 @@ console.log(
         Object.entries(data).sort(([a], [b]) => a.localeCompare(b))
     )
 );
+
+document.addEventListener("keydown", (event) => {
+    if (
+        event.target.matches("input, textarea, select") ||
+        event.target.isContentEditable
+    ) {
+        return;
+    }
+
+    if (event.key >= "0" && event.key <= "9") {
+        targetGroups = [event.key];
+        refreshSchedule();
+    }
+});

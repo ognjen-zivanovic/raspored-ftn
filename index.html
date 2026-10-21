@@ -619,11 +619,14 @@
       opacity: 0.75;
     }
 
-    @media only screen and (max-width: 732px) {
+    #main-container {
+      display: flex;
+      flex-direction: row;
+    }
 
-      .schedule.schedule-overflown-y[data-mode-zoom="on"] .schedule__body[data-v-31b54b0a],
-      .schedule.schedule-overflown-y[data-mode-zoom="on"] .schedule__header[data-v-31b54b0a] {
-        zoom: calc((var(--vw) - 32) / 710);
+    @media only screen and (max-width: 732px) {
+      #main-container {
+        flex-direction: column;
       }
     }
 
@@ -1641,7 +1644,7 @@
 
 <body>
   <input type="color" id="hiddenColorPicker" style="display: none;">
-  <div style="display:flex; flex-direction:row;">
+  <div id="main-container">
     <div id="app" data-mode-theme="light" data-v-app="" style="flex: 1">
       <div data-v-1138cfeb="" class="container" style="flex: 1" data-mode-screen="minimised">
         <div data-v-31b54b0a="" data-v-1138cfeb="" class="schedule schedule-overflown schedule-overflown-y"
