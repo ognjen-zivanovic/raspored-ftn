@@ -22,7 +22,7 @@ body {
     /* Space between dropdown and checkboxes */
 }
 
-@media only screen and (max-width: 732px) {
+@media only screen and (max-width: 968px) {
     .modern-sidebar {
         width: 90%;
         max-height: none;
@@ -99,7 +99,7 @@ body {
     border-top: 1px solid #e2e8f0;
 }
 
-@media only screen and (max-width: 732px) {
+@media only screen and (max-width: 968px) {
 
     html,
     body {
